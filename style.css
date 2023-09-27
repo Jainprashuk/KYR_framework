@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-box {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.chat-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+@media(max-width:1520px) {
+    .left-svg {
+        display: none;
+    }
+}
+/* small css for the mobile nav close */
+
+#nav-mobile-btn.close span:first-child {
+    transform: rotate(45deg);
+    top: 4px;
+    position: relative;
+    background: #a0aec0;
+}
+
+#nav-mobile-btn.close span:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: 0px;
+    background: #a0aec0;
+}
+
+.dark {
+    filter: invert(1);
+    background: #252525;
+}
+
+.flip {
+    filter: invert(1);
+}
+
+.theme-switch {
+    cursor: pointer;
+}
+
